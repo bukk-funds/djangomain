@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" type="text/css" href="{% static 'todo.css' %}">
+
+</head>
+
+<body>
+
+    <div class="row d-flex justify-content-center container">
+    <div class="col-md-8">
+        <div class="card-hover-shadow-2x mb-3 card">
+
+are you sure you want to delete all todo items?
+
+<button class="mr-2 btn btn-link btn-sm"><a href="{% url 'home' %}">cancel</a></button>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="delete all todo">
+</form>
+
+
+  </div>
+    </div>
+</div>
+
+</body>
+</html>
