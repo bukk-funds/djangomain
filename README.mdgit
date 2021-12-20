@@ -1,0 +1,1 @@
+"# djangomain"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/bukk-funds/djangomain.gitgit push -u origin master
